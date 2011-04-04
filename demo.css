@@ -1,0 +1,19 @@
+.durationPicker img {
+	display:none;
+}
+
+.durationPicker input, .durationPicker > div {
+	display:inline-block;
+}
+
+.timeDropDown .item {
+	white-space:nowrap;
+}
+
+.error {
+	background-color: red;
+}
+
+.displayInline {
+	display:inline-block;
+}

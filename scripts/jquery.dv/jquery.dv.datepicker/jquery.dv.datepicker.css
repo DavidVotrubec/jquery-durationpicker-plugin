@@ -1,0 +1,16 @@
+﻿.calImg
+{
+    width: 16px;
+    height: 16px;
+    background-image: url('img/calendar.png');
+    background-repeat: no-repeat;
+    background-color: #aaa;
+    display: inline-block;
+    margin: 0px 2px;
+    margin-left:3px;
+}
+
+.hideCalImage img 
+{
+    display:none;
+}

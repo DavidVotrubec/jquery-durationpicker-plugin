@@ -1,0 +1,102 @@
+<html>
+<head>
+	<title>DurationPicker Demo</title>	
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+	<link rel="stylesheet" href="scripts/jqueryui/themes/smoothness/jquery-ui-1.8.7.custom.css"/>
+	<link rel="stylesheet" href="demo.css"/>
+	
+	<link rel="stylesheet" href="scripts/jquery.dv/jquery.dv.datepicker/jquery.dv.datepicker.css"/>
+	<link rel="stylesheet" href="scripts/jquery.dv/jquery.dv.durationpicker/jquery.dv.durationpicker.css"/>
+	
+	<!--
+	<script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="scripts/jqueryui/jquery-ui-1.8.7.custom.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery/jquery.maskedinput/jquery.maskedinput.js"></script>
+	<script type="text/javascript" src="scripts/consolecheck.js"></script>
+	<script type="text/javascript" src="scripts/dateformat.js"></script>
+	<script type="text/javascript" src="scripts/datehelper.js"></script>
+	<script type="text/javascript" src="scripts/timehelper.js"></script>
+	<script type="text/javascript" src="scripts/stringextension.js"></script>
+	<script type="text/javascript" src="scripts/jquery.dv/jquery.dv.datepicker/jquery.dv.datepicker.js"></script>
+	<script type="text/javascript" src="scripts/jquery.dv/jquery.dv.durationpicker/jquery.dv.durationpicker.js"></script>
+	
+	
+	<script>
+		//TODO: when all is ready -> use head.js
+		$(function() {
+			$('.durationpicker').each(function() {
+				$(this).durationpicker();
+			});
+		});
+	</script>
+	-->
+	
+	<script src="scripts/head.min.js" type="text/javascript"></script>
+	<script>
+		head.js(
+			'scripts/jquery-1.4.4.min.js'
+			, 'scripts/jqueryui/jquery-ui-1.8.7.custom.min.js'
+			, 'scripts/jquery/jquery.maskedinput/jquery.maskedinput.js'
+			, 'scripts/consolecheck.js'
+			, 'scripts/dateformat.js'
+			, 'scripts/datehelper.js'
+			, 'scripts/timehelper.js'
+			, 'scripts/stringextension.js'
+			, 'scripts/jquery.dv/jquery.dv.datepicker/jquery.dv.datepicker.js'
+			, 'scripts/jquery.dv/jquery.dv.durationpicker/jquery.dv.durationpicker.js'
+			, function() {
+				$('.durationpicker').each(function() {
+					$(this).durationpicker();
+				});
+			}
+		);
+	</script>
+	
+</head>
+
+<body>
+
+	<div class="main">
+		<form action="#">
+			<div class="durationPicker aaa" id="killme">
+				<input class="dateFrom"/>
+				<input class="timeFrom"/>
+				<input class="timeTo" id="o"/>
+				<input class="dateTo"/>
+				<span style="float:right;">
+					<input class="wholeDayCheckbox" type="checkbox" id="1"/><label for="1">Whole day</label>
+				</span>
+			</div>
+			
+			
+			<br/>
+			<br/>
+			<div class="durationPicker jinaClassa" data-dateFormat="dd.mm.yyyy" data-timeformat="hh:MM tt" id="killyou">
+				<input class="customDate dateFrom"/>
+				<input class="timeFrom"/>
+				<input class="timeTo"  id="oo"/>
+				<input class="customDate dateTo"/>
+				<span style="float:right;">
+					<input class="wholeDayCheckbox" type="checkbox" id="2"/><label for="2">Whole day</label>
+				</span>
+			</div>
+			
+			
+			<br/>
+			<br/>
+			<div class="durationPicker uplneJinaClassa" data-dateFormat="dd-mm-yyyy" data-timeformat="hh:MM tt" id="killyou2">
+				<input class="customDate dateFrom"/>
+				<input class="timeFrom"/>
+				<input class="timeTo" id="ooo"/>
+				<input class="customDate dateTo"/>
+				<span style="float:right;">
+					<input class="wholeDayCheckbox" type="checkbox" id="3"/><label for="3">Whole day</label>
+				</span>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

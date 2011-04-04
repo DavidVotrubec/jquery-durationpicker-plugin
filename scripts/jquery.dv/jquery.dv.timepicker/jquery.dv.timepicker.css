@@ -1,0 +1,23 @@
+﻿.timePickerWrapper 
+{
+    position:relative;
+    display: inline-block;
+}
+
+.timePicker 
+{
+    background-color: White;
+    height: 150px;
+    width: 120px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #787878;
+    position:absolute;
+    top: 22px;
+    left:0px;
+}
+
+.timePicker .item:hover 
+{
+    background-color: lightblue;
+}

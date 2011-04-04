@@ -1,0 +1,69 @@
+﻿.durationPicker {
+	/*TODO: Width*/
+	min-width: 200px;
+	max-width: 480px;
+}
+
+.durationPicker .to 
+{
+    padding: 0px 3px;
+}
+
+.durationPicker .wholeDay 
+{
+    float:none;
+    padding: 0px;
+    padding-left: 3px;
+    width:auto;
+}
+
+.durationPicker input.dateFrom, .durationPicker input.dateTo
+{
+    width: 82px;
+    margin-right: 2px;
+}
+
+.durationPicker input.timeFrom, .durationPicker input.timeTo
+{
+    width: 68px;
+    margin-right: 2px;
+}
+
+/*fix for rule in default.less: .detail-form input.customDate*/
+.detail-form .durationPicker input.dateFrom, .detail-form .durationPicker input.dateTo
+{
+    width: 82px;
+    margin-right: 2px;
+}
+.detail-form  .durationPicker input.timeFrom, .detail-form .durationPicker input.timeTo 
+{
+    width: 68px;
+    margin-right: 2px;
+}
+
+.timeContainer 
+{
+    position: relative;
+    color:Black;
+}
+
+.timeDropDown 
+{
+    position:absolute;
+    top: 25px;
+    left:0px;
+    height: 200px;
+    min-width: 66px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: White;
+    z-index:10;
+    display:none;
+    border: 1px solid #999;    
+    padding-right: 20px;
+}
+
+.timeDropDown .item:hover 
+{
+    background-color: lightblue;
+}
